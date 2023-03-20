@@ -48,6 +48,7 @@ li:last-child {
   padding: 40px;
 }
 
+
 .card:nth-child(2) {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
@@ -89,8 +90,38 @@ button:active {
   color: hsl(100, 100%, 100%);
 }
 
-
-
 .hide {
   display: none;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 850px)  {
+  body {
+    background: top right / 35% no-repeat url(images/bg-top.svg), bottom left / 29% no-repeat url(images/bg-bottom.svg), hsl(240, 78%, 98%);
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+
+  .card {
+    margin: 70px 0;
+    width: 100%;
+  }
+
+  .card:nth-child(2) {
+    transform: scaleY(110%);
+  }
 }
