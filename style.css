@@ -22,8 +22,8 @@ span {
 }
 
 span:last-child {
-  vertical-align: middle;
   font-size: 4rem;
+  vertical-align: middle;
 }
 
 ul {
@@ -45,7 +45,7 @@ li:last-child {
   background-color: hsl(100, 100%, 100%);
   border-radius: 0.5rem;
   margin: 20px;
-  padding: 40px;
+  padding: 20px;
 }
 
 
@@ -73,8 +73,8 @@ button {
 }
 
 button:active {
-  border: 0.025rem solid hsl(237, 63%, 64%);
   background: none;
+  border: 0.025rem solid hsl(237, 63%, 64%);
   color: hsl(237, 63%, 64%) ;
 }
 
@@ -85,8 +85,8 @@ button:active {
 }
 
 .card:nth-child(2) button:active {
-  border: 0.0125rem solid hsl(100, 100%, 100%);
   background: none;
+  border: 0.0125rem solid hsl(100, 100%, 100%);
   color: hsl(100, 100%, 100%);
 }
 
@@ -115,27 +115,28 @@ input[type=checkbox]{
 }
 
 label {
+  background: hsl(236, 72%, 79%);
+  border-radius: 100px;
   cursor: pointer;
+  display: block;
+  height: 50px;
+  margin: 0 1rem;
+  position: relative;
   text-indent: -9999px;
   width: 100px;
-  height: 50px;
-  background: hsl(236, 72%, 79%);
-  display: block;
-  border-radius: 100px;
-  position: relative;
-  margin: 0 1rem;
 }
 
 label:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 40px;
-  height: 40px;
   background: #fff;
   border-radius: 50%;
-  transition: 0.5s;
+  content: '';
+  height: 40px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  width: 40px;
 }
 
 input:checked + label {
@@ -150,13 +151,6 @@ input:checked + label:after {
 label:active:after {
   width: 130px;
 }
-
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 
 @media (min-width: 850px)  {
   body {
