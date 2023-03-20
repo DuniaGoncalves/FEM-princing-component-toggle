@@ -1,3 +1,86 @@
+body {
+  background: top right / 60% no-repeat url("images/bg-top.svg"), bottom left / 45% no-repeat url("images/bg-bottom.svg"), hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1,
+h3,
+ul {
+  color: hsl(233, 13%, 49%);
+}
+
+h2 {
+  color: hsl(232, 13%, 33%);
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  border-top: 0.025rem solid hsl(234, 14%, 74%);
+  list-style-type: none;
+  padding: 1rem 0;
+}
+
+li:last-child {
+  border-bottom: 0.025rem solid hsl(234, 14%, 74%);
+}
+
+.card {
+  background-color: hsl(100, 100%, 100%);
+  border-radius: 0.5rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card:nth-child(2) {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card:nth-child(2) h3,
+.card:nth-child(2) h2,
+.card:nth-child(2) li {
+  color: hsl(100, 100%, 100%);
+}
+
+button {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 0.275rem;
+  border-style: none;
+  color: hsl(100, 100%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+button:active {
+  border: 0.025rem solid hsl(237, 63%, 64%);
+  background: none;
+  color: hsl(237, 63%, 64%) ;
+}
+
+.card:nth-child(2) button {
+  background-color: hsl(100, 100%, 100%);
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+}
+
+.card:nth-child(2) button:active {
+  border: 0.0125rem solid hsl(100, 100%, 100%);
+  background: none;
+  color: hsl(100, 100%, 100%);
+}
+
+
+
 .hide {
   display: none;
 }
