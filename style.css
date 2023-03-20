@@ -103,6 +103,61 @@ button:active {
   color: hsl(228, 45%, 44%); 
 }
 
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  background: hsl(236, 72%, 79%);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 1rem;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input:checked + label {
+  background: hsl(236, 72%, 79%);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
 @media (min-width: 850px)  {
   body {
     background: top right / 35% no-repeat url(images/bg-top.svg), bottom left / 29% no-repeat url(images/bg-bottom.svg), hsl(240, 78%, 98%);
