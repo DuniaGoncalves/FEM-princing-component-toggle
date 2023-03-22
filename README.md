@@ -64,5 +64,5 @@ Deploy the component: Finally, deploy the component to a production environment,
 
 ## Author
 
-- Website - Coming Soon
+- Website - Coming Soon -
 - Twitter - [@duniaknowsbest](https://www.twitter.com/duniaknowsbest)
