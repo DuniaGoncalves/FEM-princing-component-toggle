@@ -1,13 +1,19 @@
+/* Background */
 body {
-  background: top right / 60% no-repeat url("images/bg-top.svg"), bottom left / 45% no-repeat url("images/bg-bottom.svg"), hsl(240, 78%, 98%);
+  background:
+    top right / 60% no-repeat url("images/bg-top.svg"),
+    bottom left / 45% no-repeat url("images/bg-bottom.svg"),
+    hsl(240, 78%, 98%);
+}
+
+/* Typography */
+body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   text-align: center;
 }
 
-h1,
-h3,
-ul {
+h1, h3, ul {
   color: hsl(233, 13%, 49%);
 }
 
@@ -26,6 +32,7 @@ span:last-child {
   vertical-align: middle;
 }
 
+/* Lists */
 ul {
   padding: 0;
 }
@@ -41,13 +48,13 @@ li:last-child {
   margin-bottom: 2rem;
 }
 
+/* Cards */
 .card {
   background-color: hsl(100, 100%, 100%);
   border-radius: 0.5rem;
   margin: 20px;
   padding: 20px;
 }
-
 
 .card:nth-child(2) {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -59,6 +66,7 @@ li:last-child {
   color: hsl(100, 100%, 100%);
 }
 
+/* Buttons */
 button {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   border-radius: 0.275rem;
@@ -90,6 +98,7 @@ button:active {
   color: hsl(100, 100%, 100%);
 }
 
+/* Utility Classes */
 .hide {
   display: none;
 }
@@ -108,6 +117,7 @@ button:active {
   justify-content: center;
 }
 
+/* Checkbox Toggle */
 input[type=checkbox]{
   height: 0;
   width: 0;
@@ -139,18 +149,20 @@ label:after {
   width: 40px;
 }
 
-input:checked + label {
-  background: hsl(236, 72%, 79%);
-}
-
 input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
 
+input:checked + label {
+  background: hsl(236, 72%, 79%);
+}
+
 label:active:after {
   width: 130px;
 }
+
+/* Media Query */
 
 @media (min-width: 850px)  {
   body {
@@ -173,4 +185,4 @@ label:active:after {
   .card:nth-child(2) {
     transform: scaleY(110%);
   }
-}
+} 
