@@ -49,20 +49,20 @@ li:last-child {
 }
 
 /* Cards */
-.card {
+.price-card {
   background-color: hsl(100, 100%, 100%);
   border-radius: 0.5rem;
   margin: 20px;
   padding: 20px;
 }
 
-.card:nth-child(2) {
+.price-card:nth-child(2) {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
-.card:nth-child(2) h3,
-.card:nth-child(2) h2,
-.card:nth-child(2) li {
+.price-card:nth-child(2) h3,
+.price-card:nth-child(2) h2,
+.price-card:nth-child(2) li {
   color: hsl(100, 100%, 100%);
 }
 
@@ -86,16 +86,20 @@ button:active {
   color: hsl(237, 63%, 64%) ;
 }
 
-.card:nth-child(2) button {
+.price-card:nth-child(2) button {
   background-color: hsl(100, 100%, 100%);
   background-image: none;
   color: hsl(237, 63%, 64%);
 }
 
-.card:nth-child(2) button:active {
+.price-card:nth-child(2) button:active {
   background: none;
   border: 0.0125rem solid hsl(100, 100%, 100%);
   color: hsl(100, 100%, 100%);
+}
+
+.price-card:nth-child(2) button a {
+  text-decoration: none;
 }
 
 /* Utility Classes */
@@ -126,14 +130,14 @@ input[type=checkbox]{
 
 label {
   background: hsl(236, 72%, 79%);
-  border-radius: 100px;
+  border-radius: 30px;
   cursor: pointer;
   display: block;
-  height: 50px;
+  height: 60px;
   margin: 0 1rem;
   position: relative;
   text-indent: -9999px;
-  width: 100px;
+  width: 120px;
 }
 
 label:after {
@@ -141,16 +145,16 @@ label:after {
   border-radius: 50%;
   content: '';
   height: 40px;
-  left: 5px;
+  left: 10px;
   position: absolute;
-  top: 5px;
+  top: 10px;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   width: 40px;
 }
 
 input:checked + label:after {
-  left: calc(100% - 5px);
+  left: calc(100% - 10px);
   transform: translateX(-100%);
 }
 
@@ -159,7 +163,7 @@ input:checked + label {
 }
 
 label:active:after {
-  width: 130px;
+  width: 150px;
 }
 
 /* Media Query */
@@ -177,12 +181,12 @@ label:active:after {
     margin: 0 20px;
   }
 
-  .card {
+  .price-card {
     margin: 70px 0;
     width: 100%;
   }
 
-  .card:nth-child(2) {
+  .price-card:nth-child(2) {
     transform: scaleY(110%);
   }
 } 
