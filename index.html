@@ -21,16 +21,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Our Pricing</h1>
-    <section class="toggle">
-      <h3>Annually</h3>
-      <input type="checkbox" id="switch" />
-      <label for="switch">Toggle</label>
-      <h3>Monthly</h3>
-    </section>
-
-    <section class="desktop">
-      <section class="card">
+    <header>
+      <h1>Our Pricing</h1>
+      <section class="toggle">
+        <h3>Annually</h3>
+        <input type="checkbox" id="switch" />
+        <label for="switch">Toggle</label>
+        <h3>Monthly</h3>
+      </section>
+    </header>
+    <main class="desktop">
+      <article class="price-card">
         <h3>Basic</h3>
         <h2 class="month hide"><span>&dollar;</span><span>19.99</span></h2>
         <h2 class="year"><span>&dollar;</span><span>199.99</span></h2>
@@ -40,9 +41,8 @@
           <li>Send up to 3 GB</li>
         </ul>
         <button>Learn More</button>
-      </section>
-      <section class="card">
-        <form action="https://www.resilientcoders.org/">
+      </article>
+      <article class="price-card">        
           <h3>Professional</h3>
           <h2 class="month hide"><span>&dollar;</span><span>24.99</span></h2>
           <h2 class="year"><span>&dollar;</span><span>249.99</span></h2>
@@ -51,10 +51,10 @@
             <li>5 Users Allowed</li>
             <li>Send up to 10 GB</li>
           </ul>
-          <button>Resilient Coders</button>
+          <button><a href="https://www.resilientcoders.org/"">Resilient Coders</a></button>
         </form>
-      </section>
-      <section class="card">
+      </article>
+      <article class="price-card">        
         <h3>Ultimate</h3>
         <h2 class="month hide"><span>&dollar;</span><span>39.99</span></h2>
         <h2 class="year"><span>&dollar;</span><span>399.99</span></h2>
@@ -64,8 +64,8 @@
           <li>Send up to 20 GB</li>
         </ul>
         <button>Learn More</button>
-      </section>
-    </section>
+      </article>
+    </main>
 
     <footer class="attribution">
       Challenge by
